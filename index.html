@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <style>
+    .container {
+      margin: 5% 28%;
+    }
+    button {
+      display: flex;
+      justify-content: center;
+      width: 200px;
+      background: coral;
+      padding: 10px;
+      margin: 20px auto;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- tooltip -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      <span class="tooltip" data-message="I'm a tooltip!">¿Qué soy?</span>
+      Possimus optio dolor, architecto incidunt aliquid accusantium! Necessitatibus ratione itaque officia quia!</p>
+
+    <!-- dropdowns -->
+    <h3>Minion products</h3>
+    <div class="dropdown">
+      <div class="trigger">Talking teddy bear</div>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloribus assumenda optio. Adipisci, modi
+          sint!
+        </p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="trigger">Minion Machine to rule the World</div>
+      <div class="content">
+        <p>Lorem ipsum damet conseolor sit amet cosectetur adipisicg elit. Omm ipsum dolor sit amet coetur adipisicing
+          nis
+          doloribptio. Adipisci, modi si</p>
+      </div>
+    </div>
+
+    <!-- tabs -->
+    <h3>More Minion information</h3>
+    <div class="tabs">
+      <ul>
+        <li class="trigger active" data-target="#about">About Minions</li>
+        <li class="trigger" data-target="#weapons">Minion Weapons</li>
+        <li class="trigger" data-target="#delivery">Delivery policy</li>
+      </ul>
+
+      <div id="about" class="content active">
+        <h4>About</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione accusamus distinctio iste excepturi minus
+        </p>
+      </div>
+      <div id="weapons" class="content">
+        <h4>Weapons</h4>
+        <p>Lorem ipsumctetur adipisicing dolor sit amet conse elit. Ratione atio iste excepturi dolor sit amet
+          conseminus</p>
+      </div>
+      <div id="delivery" class="content">
+        <h4>Delivery</h4>
+        <p>Lorem ipst consectetur adipisicingum dolor sit ameone accusamusinctio iste distri minus exceptu</p>
+      </div>
+    </div>
+
+    <button class="snackbar-trigger">Click me!</button>
+  </div>
+
+  <script src="assets/bundle.js"></script>
+</body>
+
+</html>
